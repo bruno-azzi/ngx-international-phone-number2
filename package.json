@@ -1,5 +1,5 @@
 {
-  "name": "ngx-international-phone-number2",
+  "name": "ngx-international-phone-number3",
   "version": "1.2.4",
   "scripts": {
     "build": "gulp build",
@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/esoyke/ngx-international-phone-number2"
+    "url": "https://github.com/bruno-azzi/ngx-international-phone-number2/tarball/0a208d880a3404f5b656a490dfd5f8938b7b18e5"
   },
   "author": {
-    "name": "Eric Soyke",
-    "email": "soykes@yahoo.com"
+    "name": "Bruno Azzi",
+    "email": "brunoazzi12345@gmail.com"
   },
   "keywords": [
     "angular"
