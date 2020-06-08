@@ -58,13 +58,13 @@ export class PhoneNumberComponent
     @Input() allowedCountries: Country[];
 
     // only doing masking for US and Canadian numbers. Other countries can have different patterns, Finland even allows numbers from 5 to 12 digits. Rely on Google-libphonenumber
-    masking = [/\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
+    // masking = [/\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/];
 
     // optionally format output model with a space between country code and phone number
     @Input() countryCodeSpace: boolean = true;
     
     // optionally suppress the +1 for US phones
-    @Input() noUSCountryCode: boolean = true;
+    @Input() noUSCountryCode: boolean = false;
 
     // Set true if you want the model touched upon any change, rather than just when valid or blurred.
     @Input() autoTouch: boolean = false;
@@ -137,7 +137,7 @@ export class PhoneNumberComponent
      * Return true if not US or Canada. Eliminates masking and relies solely on Google-libphonenumber for validation
      */
     isForeign(){
-        return this.selectedCountry && this.selectedCountry.countryCode!='us' && this.selectedCountry.countryCode!='ca';
+        return this.selectedCountry;
     }
 
     /**
@@ -229,8 +229,6 @@ export class PhoneNumberComponent
         var defaultCountryUS = {name: "United States", dialCode: "1", countryCode: "us"};
         if(this.selectedCountry)
             this.dialCode = this.selectedCountry.dialCode;
-        else
-            this.selectedCountry = defaultCountryUS;
     }
 
     /**
@@ -360,11 +358,7 @@ export class PhoneNumberComponent
     private updateValue() {
         let temp;
         let dialCode;
-
-        if(this.selectedCountry.countryCode == 'us' && this.noUSCountryCode)
-            dialCode = '';
-        else
-            dialCode = '+'+this.dialCode;    
+        dialCode = '+'+this.dialCode;    
         if(this.countryCodeSpace)
             temp = dialCode+' '+this.formattedPhone();
         else

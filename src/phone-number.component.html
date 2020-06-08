@@ -22,7 +22,7 @@
 
   <!-- domestic, required, uses masking directive -->
   <input *ngIf="required && !isForeign()" phone required name="primaryPhoneInput" id="primaryPhoneInput" placeholder='{{placeholder}}'
-   [textMask]="{mask: masking}" [(ngModel)]="phoneNumberOnly" aria-label='phone number' #phoneNumberInput type="text" (ngModelChange)=updatePhoneNumber($event) 
+    [(ngModel)]="phoneNumberOnly" aria-label='phone number' #phoneNumberInput type="text" (ngModelChange)=updatePhoneNumber($event) 
    (blur)=blur()/>
    <!-- Foreign, required, since foreign countries can have different length phones, potentially from 5 to 12 digits, remove the masking and enforce a max of 12 numeric digits. Rely on google-libphonenumber for validation. -->
   <input *ngIf="required && isForeign()" phone required name="primaryPhoneInput" id="primaryPhoneInput" placeholder='{{placeholder}}' 
@@ -31,7 +31,7 @@
 
   <!-- domestic, not required -->
   <input *ngIf="!required && !isForeign()" phone name="primaryPhoneInput" id="primaryPhoneInput" placeholder='{{placeholder}}'  
-  [textMask]="{mask: masking}" [(ngModel)]="phoneNumberOnly" aria-label='phone number' #phoneNumberInput type="text" (ngModelChange)=updatePhoneNumber($event) 
+   [(ngModel)]="phoneNumberOnly" aria-label='phone number' #phoneNumberInput type="text" (ngModelChange)=updatePhoneNumber($event) 
   (blur)=blur()/>
   <!-- foreign, not required -->
   <input *ngIf="!required && isForeign()" phone name="primaryPhoneInput" id="primaryPhoneInput" placeholder='{{placeholder}}' 
