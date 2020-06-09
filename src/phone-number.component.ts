@@ -390,10 +390,7 @@ export class PhoneNumberComponent
             (country: Country) => country.countryCode === countryCode
         );
         if (this.selectedCountry) {
-            if(this.selectedCountry.countryCode != 'us' || !this.noUSCountryCode)
-                this.dialCode = this.selectedCountry.dialCode;
-            else
-                this.dialCode = null; 
+            this.dialCode = this.selectedCountry.dialCode;
         }
     }
 
