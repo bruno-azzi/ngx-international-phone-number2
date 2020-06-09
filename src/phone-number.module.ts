@@ -27,10 +27,10 @@ import { PhoneMaskCursorProcessorDirective } from './phone.directive';
     ],
     providers: [CountryService]
 })
-export class InternationalPhoneNumber3Module {
+export class InternationalPhonenumberv3Module {
   static forRoot(): ModuleWithProviders {
     return {
-      ngModule: InternationalPhoneNumber3Module,
+      ngModule: InternationalPhonenumberv3Module,
       providers: [CountryService]
     };
   }

@@ -1,5 +1,5 @@
 {
-  "name": "ngx-international-phone-number3",
+  "name": "ngx-international-phone-numberv3",
   "version": "1.2.4",
   "repository": {
     "type": "git",
@@ -13,10 +13,10 @@
   "bugs": {
     "url": "https://github.com/bruno-azzi/ngx-international-phone-number2/issues"
   },
-  "main": "ngx-international-phone-number3.umd.js",
+  "main": "ngx-international-phone-numberv3.umd.js",
   "module": "index.js",
   "jsnext:main": "index.js",
-  "typings": "ngx-international-phone-number3.d.ts",
+  "typings": "ngx-international-phone-numberv3.d.ts",
   "peerDependencies": {
     "@angular/core": "^7.1.3",
     "@angular/forms": "^7.1.3",
