@@ -36,10 +36,10 @@ const VALIDATOR = {
 };
 
 @Component({
-    selector: 'international-phone-number2',
+    selector: 'international-phone-number3',
     templateUrl: './phone-number.component.html',
     styleUrls: ['./phone-number.component.scss', './assets/css/flags.min.css'],
-    host: {
+    host: {                 
         '(document:click)': 'hideDropdown($event)'
     },
     providers: [COUNTER_CONTROL_ACCESSOR, VALIDATOR]
