@@ -21,8 +21,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "ngx-international-phone-number2.js",
-    "flatModuleId": "ngx-international-phone-number2"
+    "flatModuleOutFile": "ngx-international-phone-numberv3.js",
+    "flatModuleId": "ngx-international-phone-numberv3"
   },
   "files": [
     "./index.ts"

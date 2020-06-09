@@ -1,4 +1,4 @@
-# ngx-international-phone-number2
+# ngx-international-phone-numberv3
 A simple international telephone number input. Allows you to create a phone number field with country dropdown. 
 
 This is re-re-written version (with enhancements and bug fixes) of [ngx-international-phone-number](https://github.com/nikhiln/ngx-international-phone-number) by [nikhiln](https://github.com/nikhiln), which was a re-written version of [ng4-intl-phone](https://github.com/kondi0/ng4-intl-phone/). So credit should go to [nikhiln](https://github.com/nikhiln) and [kondi0](https://github.com/kondi0).
@@ -44,12 +44,12 @@ I discovered some problems with the ngx-international-phone-number library, prom
 To install this library, run:
 
 ```bash
-$ npm install ngx-international-phone-number2 --save
+$ npm install ngx-international-phone-numberv3 --save
 ```
 
 ## Consuming your library
 
-Once you have installed it you can import `InternationalPhoneNumberModule` from `ngx-international-phone-number2` in any application module. E.g.
+Once you have installed it you can import `InternationalPhoneNumberModule` from `ngx-international-phone-numberv3` in any application module. E.g.
 
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
@@ -58,7 +58,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 // Import your library
-import { InternationalPhoneNumber2Module } from 'ngx-international-phone-number2';
+import { InternationalPhoneNumber2Module } from 'ngx-international-phone-numberv3';
 
 @NgModule({
   declarations: [
@@ -83,7 +83,7 @@ In your angular.json in the assets array, include the library's assets/images fo
 ```typescript
 {
   "glob": "**/*",
-  "input": "node_modules/ngx-international-phone-number2/assets/images",
+  "input": "node_modules/ngx-international-phone-numberv3/assets/images",
   "output": "./assets/images"
 }
 ```

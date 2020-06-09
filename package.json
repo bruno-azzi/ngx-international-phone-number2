@@ -1,5 +1,5 @@
 {
-  "name": "ngx-international-phone-number3",
+  "name": "ngx-international-phone-numberv3",
   "version": "1.2.6",
   "scripts": {
     "build": "gulp build",
@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/esoyke/ngx-international-phone-number2/issues"
+    "url": "https://github.com/bruno-azzi/ngx-international-phone-number2/issues"
   },
   "devDependencies": {
     "@angular/common": "^7.2.15",
